@@ -13,6 +13,7 @@
     font-size: 44px;
     text-align: center;
     margin-bottom: 30px;
+    color: #333333;
 }
 
 .contact-figure {
@@ -36,6 +37,7 @@ blockquote p {
     font-size: 24px;
     font-style: italic;
     text-align: justify;
+    color: #333333;
 }
 
 blockquote footer {
