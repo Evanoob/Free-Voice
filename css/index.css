@@ -4,3 +4,36 @@
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
+
+.bold {
+    font-weight: 700;
+}
+
+article#poster img {
+    max-width: 1280px;
+}
+
+article#training {
+    display: flex;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 300px
+}
+
+
+article#training div {
+    width: 70%;
+
+}
+
+article#training h2 {}
+
+article#training p {}
+
+
+
+article#training img {
+    align-items: center;
+}
