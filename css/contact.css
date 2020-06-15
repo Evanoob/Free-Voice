@@ -4,3 +4,182 @@
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
+
+#main-content {
+    padding: 20px 150px;
+}
+
+.contact-title {
+    font-size: 44px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact-figure {
+    text-align: center;
+    /* margin-bottom: 50px; */
+}
+
+.contact-figure img {
+    width: 85%;
+    min-width: 320px;
+}
+
+blockquote {
+    border-left: 5px solid #cccccc;
+    margin: 50px 250px;
+    min-width: 320px;
+}
+
+blockquote p {
+    margin-left: 20px;
+    font-size: 24px;
+    font-style: italic;
+    text-align: justify;
+}
+
+blockquote footer {
+    margin: 50px 0 0 20px;
+    padding-bottom: 30px;
+    font-size: 18px;
+    font-style: italic;
+}
+
+form {
+    width: 70%;
+    margin: auto;
+    /* background: beige; */
+    padding: 2% 5%;
+    min-width: 310px;
+}
+
+input,
+select {
+    width: 90%;
+    min-width: 310px;
+    height: 30%;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+textarea {
+    width: 90%;
+    min-width: 310px;
+    height: 200px;
+    resize: none;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 5px;
+    margin-bottom: 30px;
+}
+
+input[type="submit"] {
+    cursor: pointer;
+    width: 20%;
+    border-radius: 10px;
+    background: #ed8b53;
+    color: white;
+    font-size: 20px;
+    transition: background .6s;
+    margin-bottom: 50px;
+    min-width: 150px;
+}
+
+input:hover[type="submit"] {
+    color: white;
+    background: #5ec1b9;
+}
+
+.contact-hr {
+    width: 150px;
+    margin-left: 150px;
+}
+
+.partage {
+    margin: 20px 0 0 150px;
+}
+
+.partage h3 {
+    margin-bottom: 30px;
+    color: #666666;
+}
+
+.partage ul {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.partage ul li {
+    list-style: none;
+    border: 1px solid grey;
+    margin-right: 5px;
+    border-radius: 20px;
+    padding-left: 5px;
+}
+
+.partage ul li a {
+    display: flex;
+    text-decoration: none;
+}
+
+.partage ul li a p {
+    margin-right: 5px;
+    color: grey;
+    font-size: 12px;
+}
+
+.rs {
+    width: 20px;
+    margin-right: 5px;
+}
+
+@media screen and (max-width: 1279px) {
+
+    blockquote {
+        margin: 50px 150px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    blockquote {
+        margin: 50px 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #main-content {
+        padding: 20px;
+    }
+
+    .contact-title {
+        font-size: 34px;
+    }
+
+    blockquote {
+        border-left: 5px solid #cccccc;
+        min-width: 320px;
+    }
+
+    blockquote p {
+        margin-left: 20px;
+        font-size: 16px;
+    }
+
+    .contact-figure img {
+        display: none;
+    }
+
+    input,
+    select,
+    textarea,
+    input[type="submit"] {
+        font-size: 14px;
+    }
+
+}
