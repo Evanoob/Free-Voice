@@ -4,3 +4,27 @@
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
+
+/* nav {
+    width: 50%;
+    float: right;
+    text-align: center;
+    background: saddlebrown;
+    margin-top: auto;
+} */
+
+nav ul li {
+    display: block;
+    width: 100px;
+    height: 80px;
+    float: right;
+    margin-top: 0;
+    background: black;
+}
+
+nav ul li a {
+    background: #ed8b53;
+    display: block;
+    padding: auto;
+    color: white;
+}
