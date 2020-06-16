@@ -9,31 +9,73 @@
     font-weight: 700;
 }
 
+.bolditalic {
+    font-weight: 700;
+    font-style: italic;
+}
+
+div.container {
+    margin: 20px 20%;
+}
+
+h1 {
+    font-style: italic;
+    font-size: 36px
+}
+
+p {
+    font-size: 18px;
+    text-align: justify;
+    margin-top: 25px;
+    font-size: 18px
+}
+
+article {
+    display: flex;
+}
+
 article#poster img {
     max-width: 1280px;
+    justify-content: center;
+    margin-top: -300px
 }
 
 article#training {
-    display: flex;
-    /* flex-wrap: wrap; */
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
-    min-height: 300px
+    min-height: 300px;
+    margin-top: -100px
 }
-
-
-article#training div {
-    width: 70%;
-
-}
-
-article#training h2 {}
-
-article#training p {}
-
-
 
 article#training img {
     align-items: center;
+    margin: 15px 0 100px 0
 }
+
+article#approach {
+    max-width: 1280px;
+    justify-content: center;
+}
+
+article#difference {
+    justify-content: center;
+    margin: 100px 0;
+}
+
+div#companies {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 170%;
+}
+
+div#companies figure {
+    margin: 20px 0;
+    max-width: 150px;
+}
+
+div#companies figure:nth-child(2n){border: black solid 1px;}
