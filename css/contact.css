@@ -16,11 +16,11 @@
     color: #333333;
 }
 
-.contact-figure {
+.figure {
     text-align: center;
 }
 
-.contact-figure img {
+.figure img {
     width: 85%;
     min-width: 320px;
 }
