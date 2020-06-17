@@ -21,7 +21,7 @@ div.container {
 h1 {
     font-style: italic;
     font-size: 36px;
-color: #ccc
+    color: #ccc
 }
 
 p {
@@ -35,10 +35,14 @@ article {
     display: flex;
 }
 
-article#poster img {
-    max-width: 1280px;
+article#poster figure img {
+    max-width: 1000px;
     justify-content: center;
-    margin-top: -300px
+    margin-top: 150px
+}
+
+article#poster figure#s-xs img {
+    display: none
 }
 
 article#training {
@@ -47,7 +51,7 @@ article#training {
     justify-content: center;
     width: 100%;
     min-height: 300px;
-    margin-top: -100px
+    margin-top: 200px
 }
 
 article#training img {
@@ -65,6 +69,10 @@ article#difference {
     margin: 100px 0;
 }
 
+article#partners {
+    margin-bottom: 125px
+}
+
 div#companies {
     margin-top: 50px;
     display: flex;
@@ -79,7 +87,9 @@ div#companies figure {
     max-width: 150px;
 }
 
-div#companies figure:nth-child(2n){border: black solid 1px;}
+div#companies figure:nth-child(2n) {
+    border: black solid 1px;
+}
 
 
 /*ordi grand écran : 1280px et plus
@@ -88,3 +98,33 @@ petit pc portable grande tablette : 1023px à 768px (ipad)
 petite tablette grand smartphone : 767px à 481px
 petit smartphone : 480px et moins (iphone 4 plus = 320px
 */
+
+
+@media screen and (max-width: 767px) {
+
+    article#poster figure#l-xl img {
+        display: none;
+        margin-top: 150px
+    }
+
+    article#poster figure#s-xs img {
+        max-width: 700px;
+        margin-top: 150px
+    }
+
+
+}
+
+@media screen and (max-width: 480px) {
+
+    article#poster figure#l-xl img {
+        display: none;
+        margin-top: 150px
+    }
+
+    article#poster figure#s-xs img {
+        max-width: 700px;
+        margin-top: 150px
+    }
+
+}
