@@ -4,3 +4,30 @@
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
+
+footer {
+    margin-top: 30px;
+    height: 50px;
+    width: 100%;
+    padding: 0 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer > ul {
+    list-style: none;
+}
+
+footer > ul > li > a {
+    text-decoration: none;
+    color: #cccccc;
+    font-weight: 700;
+}
+
+
+figure.reseaux {
+    width: 30px;
+    float: right;
+    margin-left: 10px;
+}
