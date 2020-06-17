@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#main-content {
+    padding: 20px 150px;
+}
+
+.title1 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333333;
+}
+
+.figure {
+    text-align: center;
+}
+
+.figure.mentions img {
+    width: 30%;
+    min-width: 320px;
+    margin-bottom: 30px;
+}
+
+p.para {
+    font-size: 18px;
+    color: #333333;
+    margin: 0 150px 30px;
+    min-width: 320px;
+}
+
+p.para.center {
+    text-align: center;
+}
+
+#retour {
+    display: block;
+    margin: auto;
+    width: 200px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background: white;
+}
+
+#retour a {
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+}
