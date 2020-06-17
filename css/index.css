@@ -20,7 +20,8 @@ div.container {
 
 h1 {
     font-style: italic;
-    font-size: 36px
+    font-size: 36px;
+color: #ccc
 }
 
 p {
@@ -79,3 +80,11 @@ div#companies figure {
 }
 
 div#companies figure:nth-child(2n){border: black solid 1px;}
+
+
+/*ordi grand écran : 1280px et plus
+pc portable en général : 1279px à 1024px (ipad pro)
+petit pc portable grande tablette : 1023px à 768px (ipad)
+petite tablette grand smartphone : 767px à 481px
+petit smartphone : 480px et moins (iphone 4 plus = 320px
+*/
