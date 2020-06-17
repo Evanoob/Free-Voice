@@ -44,13 +44,12 @@
         </blockquote>
 
         <form id="form" action="contact.php" method="post">
-
             <input type="text" id="nom" name="nom" placeholder="Votre nom ou celui de l'entreprise (requis)" required
                 autocomplete minlenght="2">
             <input type="email" name="email" placeholder="Votre email (requis)" required autocomplete minlenght="2">
             <input type="text" name="siteWeb" placeholder="Votre site Web" autocomplete minlength="2">
-
-            <select name="besoin" id="objet">
+            <input type="text" name="objet" placeholder="Objet : renseignements, Rendez-vous, Faire appel à nous (requis)" required autocomplete minlength="2">
+            <!-- <select name="besoin" id="objet">
                 <optgroup label="Formation Professionnelle">
                     <option value="rdv">Faire appel &agrave; nos services</option>
                     <option value="devis" selected>Demander des renseignements</option>
@@ -59,12 +58,9 @@
                     <option value="rdv">Faire appel &agrave; nos services</option>
                     <option value="devis" selected>Demander des renseignements</option>
                 </optgroup>
-            </select>
-
-            <textarea name="besoin" id="objet" placeholder="Entrez votre message ici, merci."></textarea>
-
+            </select> -->
+            <textarea name="message" placeholder="Entrez votre message ici, merci."></textarea>
             <input type="submit" value="Envoyer">
-
         </form>
 
         <hr class="contact-hr">
