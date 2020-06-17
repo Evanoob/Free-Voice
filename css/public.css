@@ -10,7 +10,7 @@
 }
 
 .title1 {
-    font-size: 44px;
+    font-size: 36px;
     text-align: center;
     margin-bottom: 30px;
     color: #333333;
@@ -21,12 +21,12 @@
 }
 
 .figure img {
-    width: 85%;
+    width: 60%;
     min-width: 320px;
 }
 
 .title2 {
-    font-size: 36px;
+    font-size: 28px;
     color: #cccccc;
     text-align: center;
     margin: 30px 0;
@@ -34,7 +34,7 @@
 }
 
 p.para {
-    font-size: 20px;
+    font-size: 18px;
     color: #333333;
     margin: 0 150px 30px;
     min-width: 320px;
@@ -118,13 +118,13 @@ figure.fleur {
         padding: 20px;
     }
 
-    .title1 {
+    /* .title1 {
         font-size: 34px;
     }
 
     .title2 {
         font-size: 26px;
-    }
+    } */
 
     .title3,
     p.para {
