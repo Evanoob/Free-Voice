@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/contact.css">
     <link rel="stylesheet" href="./css/footer.css">
+    <script type="module" src="./js/burger.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
 
@@ -44,11 +45,11 @@
         </blockquote>
 
         <form id="form" action="contact.php" method="post">
-            <input type="text" id="nom" name="nom" placeholder="Votre nom ou celui de l'entreprise (requis)" required
+            <input type="text" class="contact-color" name="nom" placeholder="Votre nom ou celui de l'entreprise (requis)" required
                 autocomplete minlenght="2">
-            <input type="email" name="email" placeholder="Votre email (requis)" required autocomplete minlenght="2">
-            <input type="text" name="siteWeb" placeholder="Votre site Web" autocomplete minlength="2">
-            <input type="text" name="objet" placeholder="Objet : renseignements, Rendez-vous, Faire appel à nous (requis)" required autocomplete minlength="2">
+            <input type="email" iclass="contact-color" name="email" placeholder="Votre email (requis)" required autocomplete minlenght="2">
+            <input type="text" class="contact-color" name="siteWeb" placeholder="Votre site Web" autocomplete minlength="2">
+            <input type="text" class="contact-color" name="objet" placeholder="Objet : renseignements, Rendez-vous, Faire appel à nous (requis)" required autocomplete minlength="2">
             <!-- <select name="besoin" id="objet">
                 <optgroup label="Formation Professionnelle">
                     <option value="rdv">Faire appel &agrave; nos services</option>
@@ -59,7 +60,7 @@
                     <option value="devis" selected>Demander des renseignements</option>
                 </optgroup>
             </select> -->
-            <textarea name="message" placeholder="Entrez votre message ici, merci."></textarea>
+            <textarea name="message" class="contact-color" placeholder="Entrez votre message ici, merci."></textarea>
             <input type="submit" value="Envoyer">
         </form>
 

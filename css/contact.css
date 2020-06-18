@@ -55,16 +55,24 @@ form {
     min-width: 310px;
 }
 
-input,
-select {
+input {
     width: 90%;
     min-width: 310px;
     height: 30%;
-    border: 1px solid black;
+    border: 2px solid #ed8b53;
     border-radius: 10px;
     margin-bottom: 30px;
     padding: 10px;
     font-size: 18px;
+    color: #333333;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #333333;
+}
+
+input:hover, textarea:hover {
+    border: 3px solid #5ec1b9;
 }
 
 textarea {
@@ -72,7 +80,7 @@ textarea {
     min-width: 310px;
     height: 200px;
     resize: none;
-    border: 1px solid black;
+    border: 2px solid #ed8b53;
     border-radius: 10px;
     font-size: 18px;
     padding: 5px;
@@ -89,11 +97,13 @@ input[type="submit"] {
     transition: background .6s;
     margin-bottom: 50px;
     min-width: 150px;
+    border: 1px solid #ed8b53;
 }
 
 input:hover[type="submit"] {
     color: white;
     background: #5ec1b9;
+    border: 1px solid #5ec1b9;
 }
 
 .contact-hr {
