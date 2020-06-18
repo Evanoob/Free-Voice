@@ -207,53 +207,41 @@ function f_desaccentuation_EU($chaine,$type = 'ttc'){
 $corps='';
 
 $nom=f_desaccentuation_EU($_POST['nom']);
-$adresse=f_desaccentuation_EU($_POST['adresse']);
 $email=$_POST['email'];
-
-$codepostal=$_POST['codepostal'];
-$telephone=$_POST['telephone'];
-
-$communes=$_POST['communes'];
-$chantier=$_POST['chantier'];
+$site=$_POST['siteWeb'];
+$objet=$_POST['objet'];
 $message=$_POST['message'];
-$intervention=$_POST['intervention'];
-$connaissances=$_POST['connaissances'];
 
-$corps = '<p>Nom: <strong>'.$nom.'</strong></p>';
-$corps .= '<p>Adresse: <strong>'.$adresse.'</strong></p>';
+
+$corps = '<p>Nom : <strong>'.$nom.'</strong></p>';
 $corps .= '<p>Email: <a href="mailto:'.$email.'">'.$email.'</a></p>';
+$corps .= '<p>Site: <a href="siteWeb :'.$site.'">'.$site.'</a></p>';
+$corps .= '<p><strong>Objet : </strong>'.$objet.'</p>';
+$corps .= '<p><strong>Message du client : </strong>'.$message.'</p>';
 
-$corps .= '<p>Codepostal: '.$codepostal.'</p>';
-$corps .= '<p>Telephone: <a href="tel:'.$telephone.'">'.$telephone.'</a></p>';
-
-$corps .= '<p>Communes: <strong>'.$communes.'</strong></p>';
-$corps .= '<p>Chantier: <strong>'.$chantier.'</strong></p>';
-$corps .= '<p><strong>Message du client: </strong>' .$message.'</p>';
-$corps .= '<p>Intervention de niveau: <strong>'.$intervention.'</strong></p>';
-$corps .= '<p>Connus par: <strong>'.$connaissances.'</strong></p>';
 
 require('PHPMailer/class.phpmailer.php');
 
-$mail = new PHPMailer(); // defaults to using php "mail()"
+$mail = new PHPMailer();
 
 $body = $corps;
 
-$mail->SetFrom($email, $prenom.' '.$nom);
+$mail->SetFrom($email, $site.' '.$nom);
 
 //-----------------------------------------------------------------------------
 // $destinataire ='contact@conctact.fr';
-$destinataire ='anne.morren@gmail.com';
+$destinataire ='sorriaux.gaelle@gmail.com';
 $mail->AddAddress($destinataire, '');
 //-----------------------------------------------------------------------------
 
-$mail->Subject    = 'Contact depuis votre site'.$objet;
+$mail->Subject    = 'Contact depuis votre site : '.$objet;
 //$mail->AltBody    = 'To view the message, please use an HTML compatible email viewer!'; // optional, comment out and test
 
 $mail->MsgHTML($body);
 
 if(!$mail->Send()) {
-  header("Location: Message-non-envoyer.html");
+  header("Location: message-non-envoye.html");
 } else {
-  header("Location: Message-envoyer.html");
+  header("Location: message-envoye.html");
 }
 ?>

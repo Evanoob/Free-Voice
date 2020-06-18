@@ -14,6 +14,7 @@
     text-align: center;
     margin-bottom: 30px;
     color: #333333;
+    font-weight: 700;
 }
 
 .figure {
@@ -31,6 +32,7 @@
     text-align: center;
     margin: 30px 0;
     min-width: 320px;
+    font-weight: 700;
 }
 
 p.para {
