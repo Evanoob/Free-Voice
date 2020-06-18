@@ -18,21 +18,25 @@ div.container {
     margin: 20px 20%;
 }
 
-h1+h2 {
+.titre {
     font-style: italic;
     font-size: 36px;
-    color: #ccc
+    color: #ccc;
 }
 
 p {
     font-size: 18px;
     text-align: justify;
     margin-top: 25px;
-    font-size: 18px
+    font-size: 18px;
 }
 
 article {
     display: flex;
+}
+
+article#poster {
+    justify-content: center;
 }
 
 article#training {
@@ -41,12 +45,12 @@ article#training {
     justify-content: center;
     width: 100%;
     min-height: 300px;
-    margin-top: 200px
+    margin-top: 100px
 }
 
 article#training img {
     align-items: center;
-    margin: 15px 0 100px 0
+    margin: 25px 0 50px 0
 }
 
 article#approach {
@@ -63,6 +67,10 @@ article#partners {
     margin-bottom: 125px
 }
 
+article#partners>div.container {
+    width: 80%
+}
+
 div#companies {
     display: flex;
     flex-direction: row;
@@ -71,13 +79,17 @@ div#companies {
 }
 
 div#companies figure {
-    margin: 75px 100px 0 0 ; 
+    margin: 75px 100px 0 0;
     max-width: 154px;
     flex-wrap: wrap;
     height: 104px
 }
 
- /* div#companies figure:nth-child(2n) {
+div#companies figure:last-child {
+    margin-right: 0
+}
+
+/* div#companies figure:nth-child(2n) {
     border: black solid 2px;
 }  */
 
@@ -97,7 +109,6 @@ petit smartphone : 480px et moins (iphone 4 plus = 320px
     /* POSTER 1 */
     article#poster figure#big img {
         max-width: 1000px;
-        justify-content: center;
         margin-top: 150px
     }
 
@@ -108,8 +119,12 @@ petit smartphone : 480px et moins (iphone 4 plus = 320px
     /* POSTER 2 */
     article#approach img#big {
         max-width: 1000px;
-        justify-content: center;
         margin-top: 150px;
+    }
+
+    article#approach {
+        max-width: 80%;
+        flex-wrap: wrap;
     }
 
     article#approach img#small {
@@ -117,15 +132,14 @@ petit smartphone : 480px et moins (iphone 4 plus = 320px
     }
 
 
-   
+
 }
 
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1023px) and (min-width: 768px) {
 
     article#poster figure#big img {
-        max-width: 1000px;
-        justify-content: center;
+        max-width: 90%;
         margin-top: 150px
     }
 
@@ -135,7 +149,6 @@ petit smartphone : 480px et moins (iphone 4 plus = 320px
 
     article#approach img#big {
         max-width: 1000px;
-        justify-content: center;
         margin-top: 150px;
     }
 
@@ -143,20 +156,34 @@ petit smartphone : 480px et moins (iphone 4 plus = 320px
         display: none
     }
 
-   
+    article#partners div#companies {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    article#partners div#companies figure {
+        margin: 25px 0
+    }
+
+    article#partners div#companies figure:first-child {
+        margin: 50px 0
+    }
+
 }
 
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767px) and (min-width: 481px) {
 
     article#poster figure#big img {
+        max-width: 700px;
+        margin-top: 150px
+    }
+
+    article#poster figure#small img {
+
         display: none;
-        margin-top: 150px
-    }
-
-    article#poster figure#small img {
-        max-width: 700px;
-        margin-top: 150px
     }
 
     article#approach img#big {
@@ -164,11 +191,34 @@ petit smartphone : 480px et moins (iphone 4 plus = 320px
     }
 
     article#approach img#small {
-        max-width: 700px;
-        margin-top: 150px
+        /* max-width: 80%; */
+        justify-content: center;
+        display: flex;
     }
 
-    
+    article#approach {
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 150px;
+    }
+
+    article#partners div#companies {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    article#partners div#companies figure {
+        margin: 25px 0
+    }
+
+    article#partners div#companies figure:first-child {
+        margin: 50px 0
+    }
+
+
+
 
 }
 
@@ -191,6 +241,22 @@ petit smartphone : 480px et moins (iphone 4 plus = 320px
     article#approach img#small {
         max-width: 400px;
         margin-top: 150px
+    }
+
+
+    article#partners div#companies {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    article#partners div#companies figure {
+        margin: 25px 0
+    }
+
+    article#partners div#companies figure:first-child {
+        margin: 50px 0
     }
 
 }
