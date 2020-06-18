@@ -35,16 +35,6 @@ article {
     display: flex;
 }
 
-article#poster figure img {
-    max-width: 1000px;
-    justify-content: center;
-    margin-top: 150px
-}
-
-article#poster figure#s-xs img {
-    display: none
-}
-
 article#training {
     flex-direction: column;
     align-items: center;
@@ -98,6 +88,34 @@ petit pc portable grande tablette : 1023px à 768px (ipad)
 petite tablette grand smartphone : 767px à 481px
 petit smartphone : 480px et moins (iphone 4 plus = 320px
 */
+
+
+@media screen and (min-width: 1280px) {
+
+article#poster figure img {
+    max-width: 1000px;
+    justify-content: center;
+    margin-top: 150px
+}
+
+article#poster figure#s-xs img {
+    display: none
+}
+}
+
+
+@media screen and (max-width: 1023px) {
+
+    article#poster figure img {
+        max-width: 1000px;
+        justify-content: center;
+        margin-top: 150px
+    }
+    
+    article#poster figure#s-xs img {
+        display: none
+    }
+    }
 
 
 @media screen and (max-width: 767px) {
