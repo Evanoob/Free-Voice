@@ -5,7 +5,19 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+html {
+    height: 100%;
+  }
+
+  body {
+    min-height: 100%;
+    position: relative;
+  }
+
+
 footer {
+    position: absolute;
+    bottom: 0;
     margin-top: 30px;
     height: 50px;
     width: 100%;
