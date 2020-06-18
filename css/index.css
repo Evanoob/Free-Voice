@@ -55,7 +55,6 @@ article#training img {
 
 article#approach {
     max-width: 1280px;
-    justify-content: center;
 }
 
 article#difference {
@@ -123,8 +122,8 @@ petit smartphone : 480px et moins (iphone 4 plus = 320px
     }
 
     article#approach {
-        max-width: 80%;
         flex-wrap: wrap;
+        justify-content: center;
     }
 
     article#approach img#small {
@@ -132,6 +131,15 @@ petit smartphone : 480px et moins (iphone 4 plus = 320px
     }
 
 
+    article#partners div#companies figure {
+        margin: 25px 0;
+        display: flex;
+        flex-direction: row;
+    }
+
+    article#partners div#companies figure:first-child {
+        margin: 50px 0
+    }
 
 }
 
@@ -156,11 +164,12 @@ petit smartphone : 480px et moins (iphone 4 plus = 320px
         display: none
     }
 
-    article#partners div#companies {
+      article#partners div#companies {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         align-items: center;
+        min-width: 700px;
     }
 
     article#partners div#companies figure {
