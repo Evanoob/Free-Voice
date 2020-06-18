@@ -18,7 +18,7 @@ div.container {
     margin: 20px 20%;
 }
 
-h1 {
+h1+h2 {
     font-style: italic;
     font-size: 36px;
     color: #ccc
@@ -64,22 +64,22 @@ article#partners {
 }
 
 div#companies {
-    margin-top: 50px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 170%;
 }
 
 div#companies figure {
-    margin: 20px 0;
-    max-width: 150px;
+    margin: 75px 100px 0 0 ; 
+    max-width: 154px;
+    flex-wrap: wrap;
+    height: 104px
 }
 
-div#companies figure:nth-child(2n) {
-    border: black solid 1px;
-}
+ /* div#companies figure:nth-child(2n) {
+    border: black solid 2px;
+}  */
 
 
 /*ordi grand écran : 1280px et plus
@@ -90,58 +90,106 @@ petit smartphone : 480px et moins (iphone 4 plus = 320px
 */
 
 
+/* BEHOLD THE VALLEY OF MEDIA QUERY HELLDOM */
+
 @media screen and (min-width: 1280px) {
 
-article#poster figure img {
-    max-width: 1000px;
-    justify-content: center;
-    margin-top: 150px
-}
+    /* POSTER 1 */
+    article#poster figure#big img {
+        max-width: 1000px;
+        justify-content: center;
+        margin-top: 150px
+    }
 
-article#poster figure#s-xs img {
-    display: none
-}
+    article#poster figure#small img {
+        display: none
+    }
+
+    /* POSTER 2 */
+    article#approach img#big {
+        max-width: 1000px;
+        justify-content: center;
+        margin-top: 150px;
+    }
+
+    article#approach img#small {
+        display: none
+    }
+
+
+   
 }
 
 
 @media screen and (max-width: 1023px) {
 
-    article#poster figure img {
+    article#poster figure#big img {
         max-width: 1000px;
         justify-content: center;
         margin-top: 150px
     }
-    
-    article#poster figure#s-xs img {
+
+    article#poster figure#small img {
         display: none
     }
+
+    article#approach img#big {
+        max-width: 1000px;
+        justify-content: center;
+        margin-top: 150px;
     }
+
+    article#approach img#small {
+        display: none
+    }
+
+   
+}
 
 
 @media screen and (max-width: 767px) {
 
-    article#poster figure#l-xl img {
+    article#poster figure#big img {
         display: none;
         margin-top: 150px
     }
 
-    article#poster figure#s-xs img {
+    article#poster figure#small img {
         max-width: 700px;
         margin-top: 150px
     }
 
+    article#approach img#big {
+        display: none
+    }
+
+    article#approach img#small {
+        max-width: 700px;
+        margin-top: 150px
+    }
+
+    
 
 }
 
 @media screen and (max-width: 480px) {
 
-    article#poster figure#l-xl img {
+    article#poster figure#big img {
         display: none;
         margin-top: 150px
     }
 
-    article#poster figure#s-xs img {
-        max-width: 700px;
+    article#poster figure#small img {
+        max-width: 400px;
+        margin-top: 150px
+    }
+
+    article#approach img#big {
+        display: none
+    }
+
+    article#approach img#small {
+        max-width: 400px;
         margin-top: 150px
     }
 
