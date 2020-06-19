@@ -44,6 +44,7 @@ p.para {
     color: #333333;
     margin: 0 150px 30px;
     min-width: 320px;
+    text-align: justify;
 }
 
 .title3 {
