@@ -23,6 +23,7 @@
     font-style: italic;
     font-size: 36px;
     color: #ccc;
+    font-family: 'Lora', serif !important;
 }
 
 p {
@@ -41,17 +42,20 @@ article#poster {
 }
 
 article#training {
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: center;
-    min-height: 300px;
+    min-height: 250px;
     justify-content: center;
-    margin: 100px 0 25px 0;
+    margin-top: 100px;
 }
 
-article#training img {
+article#flower{
+    display: flex;
+    justify-content: center;
     align-items: center;
-    margin: 25px 0 50px 0
 }
+
+
 
 article#approach {
     max-width: 1280px;
