@@ -35,34 +35,19 @@ p {
 
 article {
     display: flex;
-}
-
-article#poster {
     justify-content: center;
 }
 
 article#training {
-    /* flex-direction: column; */
     align-items: center;
     min-height: 250px;
-    justify-content: center;
-    margin-top: 100px;
 }
 
-article#flower{
-    display: flex;
-    justify-content: center;
+article#flower {
     align-items: center;
-}
-
-
-
-article#approach {
-    max-width: 1280px;
 }
 
 article#difference {
-    justify-content: center;
     margin: 100px 0;
 }
 
@@ -76,25 +61,10 @@ div#companies {
     justify-content: space-between;
 }
 
+/* XL + L */
+@media screen and (min-width: 1024px) {
 
-
-/*ordi grand écran : 1280px et plus
-pc portable en général : 1279px à 1024px (ipad pro)
-petit pc portable grande tablette : 1023px à 768px (ipad)
-petite tablette grand smartphone : 767px à 481px
-petit smartphone : 480px et moins (iphone 4 plus = 320px
-*/
-
-
-/* BEHOLD THE VALLEY OF MEDIA QUERY HELLDOM */
-
-
-/* 1111111111111 ORDI GD ECRAN  1280 ++ */
-
-
-@media screen and (min-width: 1280px) {
-
-    /* POSTER 1 */
+    /* POSTER */
     article#poster figure#bigposter img {
         max-width: 1000px;
         margin-top: 150px
@@ -104,64 +74,17 @@ petit smartphone : 480px et moins (iphone 4 plus = 320px
         display: none
     }
 
-    /* POSTER 2 */
-    article#approach img.big {
-        max-width: 1000px;
-        /* margin-top: 150px; */
-    }
-
-    article#approach {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    article#approach img.small {
-        display: none
-    }
-
-    /* LOGOS entreprises */
-
-
-
-    article#partners div#companies figure {
-        margin: 75px 100px 0 0;
-        height: 104px;
-        max-width: 154px;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-    }
-
-    div#companies {
-        flex-direction: row;
+    /* TRAINING */
+    article#training {
         margin-top: 25px;
     }
 
-    div#companies figure:last-child {
-        margin-right: 0
-    }
-
-}
-
-
-/* 2222222222222222222 pc portable en général : 1279px à 1024px (ipad pro)  */
-
-@media screen and (max-width: 1280px) and (min-width: 1024px) {
-
-    /* POSTER 1 */
-    article#poster figure#bigposter img {
-        max-width: 1000px;
-        margin-top: 150px
-    }
-
-    article#poster figure#smallposter img {
-        display: none
-    }
-
-    /* POSTER 2 */
+    /* APPROACH */
     article#approach img.big {
         max-width: 1000px;
         margin-top: 150px;
+        display: flex;
+        align-items: center
     }
 
     article#approach {
@@ -173,10 +96,9 @@ petit smartphone : 480px et moins (iphone 4 plus = 320px
         display: none
     }
 
-    /* LOGOS entreprises */
-
+    /* PARTNERS */
     article#partners div#companies figure {
-        margin: 75px 50px 0 0;
+        margin: 75px 5% 0 0;
         height: 104px;
         max-width: 154px;
         display: flex;
@@ -192,14 +114,13 @@ petit smartphone : 480px et moins (iphone 4 plus = 320px
     div#companies figure:last-child {
         margin-right: 0
     }
-
 }
 
-
-/* 3333333333333333333 petit pc portable grande tablette : 1023px à 768px (ipad) */
+/* M */
 
 @media screen and (max-width: 1024px) and (min-width: 769px) {
 
+    /* POSTER */
     article#poster figure#bigposter img {
         max-width: 700px;
         margin-top: 150px
@@ -209,148 +130,85 @@ petit smartphone : 480px et moins (iphone 4 plus = 320px
         display: none;
     }
 
-    article#approach{display: flex;
-    align-items: center;
-flex-direction: column;}
+    /* TRAINING */
+    article#training {
+        margin-top: 50px
+    }
+
+    /* APPROACH */
+    article#approach {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
 
     article#approach img.big {
         max-width: 700px;
-        margin-top: 150px;
+        margin-top: 100px;
     }
 
     article#approach img.small {
         display: none
     }
 
-    /* LOGOS entreprises */
-
+    /* PARTNERS */
     article#partners div.container {
-        margin: 20px 0 0 20%;
-        width: 70%
+        margin: 0 0 0 20%;
+        width: 80%
     }
 
     article#partners div#companies {
         flex-direction: row;
-        margin-top: 25px;
         width: 90%
     }
 
     article#partners div#companies figure {
-        margin: 75px 1% 0 0;
+        margin: 25px 1% 0 0;
         height: 104px;
         max-width: 154px;
         display: flex;
         flex-wrap: wrap;
-        flex-direction: row;}
+        flex-direction: row;
+    }
 
     article#partners div#companies figure:last-child {
-        margin-right: 0}
+        margin-right: 0
     }
-
-
-/* 444444444444 petite tablette grand smartphone : 768px à 481px */
-
-@media screen and (max-width: 768px) and (min-width: 481px) {
-
-    .titre {
-        font-style: italic;
-        font-size: 30px;
-        color: #ccc;
-    }
-    
-    p {
-        font-size: 14px;
-        text-align: justify;
-        margin-top: 25px;
-    }
-
-
-
-
-    article#poster figure#bigposter img {
-        display: none;
-    }
-
-    article#poster figure#smallposter img {
-        max-width: 480px;
-        margin-top: 100px
-    }
-
-
-
-    article#training{margin-top: 50px}
-
-    article#approach img.big {
-        display: none
-    }
-
-    article#approach img.small {
-        max-width: 90%
-    }
-
-    article#approach img.small:last-child {
-        max-width: 70%
-    }
-
-    article#approach {
-        flex-direction: column;
-        align-items: center;
-        margin-top: 100px;
-    }
-
-    /* LOGOS entreprises */
-
-    article#partners div#companies {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-items: center;
-    }
-
-    article#partners div#companies figure {
-        margin: 25px 0
-    }
-
-    article#partners div#companies figure:first-child {
-        margin: 50px 0
-    }
-
 }
 
-/* 555555555555555555 petit smartphone : 480px et moins (iphone 4 plus = 320px */
 
-@media screen and (max-width: 480px) {
+/* S + XS */
+@media screen and (max-width: 768px) {
 
+    /* TEXT AREAS */
     .titre {
         font-style: italic;
         font-size: 30px;
         color: #ccc;
     }
-    
+
     p {
         font-size: 14px;
         text-align: justify;
         margin-top: 25px;
     }
 
-
-    article#training{margin-top: 50px}
-
+    /* POSTER */
     article#poster figure#bigposter img {
         display: none;
     }
 
-    article#poster figure#smallposter img {
-        max-width: 320px;
-        margin-top: 150px;
-
+    article#poster figure#smallposter {
+        display: flex;
+        justify-content: center;
     }
 
-    article#approach {display: flex;
-    flex-wrap: wrap;
-flex-direction: column;
-align-items: center;}
+    article#poster figure#smallposter img {
+        max-width: 75%;
+        margin-top: 75px
+    }
 
+    /* APPROACH */
     article#approach img.big {
         display: none
     }
@@ -364,7 +222,15 @@ align-items: center;}
         max-width: 70%
     }
 
+    article#approach {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10%;
+    }
 
+    /* PARTNERS */
     article#partners div#companies {
         display: flex;
         flex-direction: column;
@@ -379,5 +245,4 @@ align-items: center;}
     article#partners div#companies figure:first-child {
         margin: 50px 0
     }
-
 }
