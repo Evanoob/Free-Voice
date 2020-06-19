@@ -21,9 +21,10 @@ header {
 .logo {
     width: 200px;
     height: 100px;
-    margin-top: 20px; 
+    /* margin-top: 10px;  */
 }
-nav{background-color: white;}
+nav{background-color: white;
+margin-top: 50px;}
 
 /* nav {
     position: absolute;
@@ -102,7 +103,7 @@ nav{background-color: white;}
     height: 4px;
     background-color: #ed8b53;
     border-radius: 5px;
-    transition: backgrounf-color 0.5s ease-in-out;
+    transition: background-color 0.5s ease-in-out;
 } 
 
 .burger span::before{
@@ -129,7 +130,7 @@ nav{background-color: white;}
 
 /*responsive*/
 
-@media screen and (max-width:1220px){
+@media screen and (max-width:1280px){
     /* .header{
         position: absolute;
         right: 0px;
