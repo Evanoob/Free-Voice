@@ -91,17 +91,17 @@ petit smartphone : 480px et moins (iphone 4 plus = 320px
 @media screen and (min-width: 1280px) {
 
     /* POSTER 1 */
-    article#poster figure#big img {
+    article#poster figure#bigposter img {
         max-width: 1000px;
         margin-top: 150px
     }
 
-    article#poster figure#small img {
+    article#poster figure#smallposter img {
         display: none
     }
 
     /* POSTER 2 */
-    article#approach img#big {
+    article#approach img.big {
         max-width: 1000px;
         /* margin-top: 150px; */
     }
@@ -111,7 +111,7 @@ petit smartphone : 480px et moins (iphone 4 plus = 320px
         justify-content: center;
     }
 
-    article#approach img#small {
+    article#approach img.small {
         display: none
     }
 
@@ -145,17 +145,17 @@ petit smartphone : 480px et moins (iphone 4 plus = 320px
 @media screen and (max-width: 1280px) and (min-width: 1024px) {
 
     /* POSTER 1 */
-    article#poster figure#big img {
+    article#poster figure#bigposter img {
         max-width: 1000px;
         margin-top: 150px
     }
 
-    article#poster figure#small img {
+    article#poster figure#smallposter img {
         display: none
     }
 
     /* POSTER 2 */
-    article#approach img#big {
+    article#approach img.big {
         max-width: 1000px;
         margin-top: 150px;
     }
@@ -165,7 +165,7 @@ petit smartphone : 480px et moins (iphone 4 plus = 320px
         justify-content: center;
     }
 
-    article#approach img#small {
+    article#approach img.small {
         display: none
     }
 
@@ -196,12 +196,12 @@ petit smartphone : 480px et moins (iphone 4 plus = 320px
 
 @media screen and (max-width: 1024px) and (min-width: 769px) {
 
-    article#poster figure#big img {
+    article#poster figure#bigposter img {
         max-width: 700px;
         margin-top: 150px
     }
 
-    article#poster figure#small img {
+    article#poster figure#smallposter img {
         display: none;
     }
 
@@ -209,12 +209,12 @@ petit smartphone : 480px et moins (iphone 4 plus = 320px
     align-items: center;
 flex-direction: column;}
 
-    article#approach img#big {
+    article#approach img.big {
         max-width: 700px;
         margin-top: 150px;
     }
 
-    article#approach img#small {
+    article#approach img.small {
         display: none
     }
 
@@ -248,29 +248,44 @@ flex-direction: column;}
 
 @media screen and (max-width: 768px) and (min-width: 481px) {
 
-    article#poster figure#big img {
+    .titre {
+        font-style: italic;
+        font-size: 30px;
+        color: #ccc;
+    }
+    
+    p {
+        font-size: 14px;
+        text-align: justify;
+        margin-top: 25px;
+    }
+
+
+
+
+    article#poster figure#bigposter img {
         display: none;
     }
 
-    article#poster figure#small img {
+    article#poster figure#smallposter img {
         max-width: 480px;
-        margin-top: 175px
+        margin-top: 100px
     }
 
-    article#poster figure#small img:last-child {
-        max-width: 400px;
-        margin-top: 175px
-    }
 
 
     article#training{margin-top: 50px}
 
-    article#approach img#big {
+    article#approach img.big {
         display: none
     }
 
-    article#approach img#small {
-        max-width: 480px
+    article#approach img.small {
+        max-width: 90%
+    }
+
+    article#approach img.small:last-child {
+        max-width: 70%
     }
 
     article#approach {
@@ -317,11 +332,11 @@ flex-direction: column;}
 
     article#training{margin-top: 50px}
 
-    article#poster figure#big img {
+    article#poster figure#bigposter img {
         display: none;
     }
 
-    article#poster figure#small img {
+    article#poster figure#smallposter img {
         max-width: 320px;
         margin-top: 150px;
 
@@ -332,13 +347,17 @@ flex-direction: column;}
 flex-direction: column;
 align-items: center;}
 
-    article#approach img#big {
+    article#approach img.big {
         display: none
     }
 
-    article#approach img#small {
+    article#approach img.small {
         margin-top: 50px;
         max-width: 90%
+    }
+
+    article#approach img.small:last-child {
+        max-width: 70%
     }
 
 
