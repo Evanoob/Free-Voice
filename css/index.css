@@ -45,7 +45,7 @@ article#training {
     align-items: center;
     min-height: 300px;
     justify-content: center;
-    margin: 100px 0;
+    margin: 100px 0 25px 0;
 }
 
 article#training img {
@@ -103,7 +103,7 @@ petit smartphone : 480px et moins (iphone 4 plus = 320px
     /* POSTER 2 */
     article#approach img#big {
         max-width: 1000px;
-        margin-top: 150px;
+        /* margin-top: 150px; */
     }
 
     article#approach {
@@ -257,6 +257,11 @@ flex-direction: column;}
         margin-top: 175px
     }
 
+    article#poster figure#small img:last-child {
+        max-width: 400px;
+        margin-top: 175px
+    }
+
 
     article#training{margin-top: 50px}
 
@@ -297,6 +302,19 @@ flex-direction: column;}
 
 @media screen and (max-width: 480px) {
 
+    .titre {
+        font-style: italic;
+        font-size: 30px;
+        color: #ccc;
+    }
+    
+    p {
+        font-size: 14px;
+        text-align: justify;
+        margin-top: 25px;
+    }
+
+
     article#training{margin-top: 50px}
 
     article#poster figure#big img {
@@ -320,7 +338,7 @@ align-items: center;}
 
     article#approach img#small {
         margin-top: 50px;
-        max-width: 320px
+        max-width: 90%
     }
 
 
