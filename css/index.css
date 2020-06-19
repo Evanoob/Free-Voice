@@ -80,16 +80,15 @@ div#companies {
     }
 
     /* APPROACH */
+    article#approach {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
     article#approach img.big {
         max-width: 1000px;
         margin-top: 150px;
         display: flex;
         align-items: center
-    }
-
-    article#approach {
-        flex-wrap: wrap;
-        justify-content: center;
     }
 
     article#approach img.small {
@@ -118,7 +117,7 @@ div#companies {
 
 /* M */
 
-@media screen and (max-width: 1024px) and (min-width: 769px) {
+@media screen and (max-width: 1023px) and (min-width: 769px) {
 
     /* POSTER */
     article#poster figure#bigposter img {
