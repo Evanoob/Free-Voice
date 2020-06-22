@@ -1,5 +1,6 @@
-const navBurger = () => {
+// menu js
 
+const navBurger = () => {
     const btnResponsive = document.querySelector(".burger");
     const nav = document.querySelector(".nav-links");
 
@@ -7,9 +8,9 @@ const navBurger = () => {
         btnResponsive.classList.toggle("active");
         nav.classList.toggle("nav-active")
     });
-    }
-    
-   navBurger();
+}
+
+navBurger()
 
 
 
