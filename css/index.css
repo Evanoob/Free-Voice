@@ -177,7 +177,6 @@ div#companies {
 
 /* S + XS */
 @media screen and (max-width: 768px) {
-
     /* TEXT AREAS */
     .titre {
         font-style: italic;
@@ -197,6 +196,7 @@ div#companies {
     }
 
     article#poster figure#smallposter {
+        margin-top: 25px;
         display: flex;
         justify-content: center;
     }
