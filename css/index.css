@@ -52,7 +52,7 @@ article#difference {
 }
 
 article#partners {
-    margin-bottom: 125px
+    margin-bottom: 50px
 }
 
 div#companies {
@@ -175,7 +175,6 @@ div#companies {
     }
 }
 
-
 /* S + XS */
 @media screen and (max-width: 768px) {
     /* TEXT AREAS */
@@ -204,7 +203,7 @@ div#companies {
 
     article#poster figure#smallposter img {
         max-width: 75%;
-        margin-top: 75px
+        margin-top: 150px
     }
 
     /* APPROACH */
@@ -230,6 +229,11 @@ div#companies {
     }
 
     /* PARTNERS */
+
+    article#partners {
+        margin-bottom: 25px
+    }
+
     article#partners div#companies {
         display: flex;
         flex-direction: column;
@@ -244,4 +248,5 @@ div#companies {
     article#partners div#companies figure:first-child {
         margin: 50px 0
     }
+
 }
