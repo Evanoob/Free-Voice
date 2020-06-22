@@ -1,4 +1,4 @@
-const navSlide = () => {
+const navBurger = () => {
 
     const btnResponsive = document.querySelector(".burger");
     const nav = document.querySelector(".nav-links");
@@ -9,7 +9,7 @@ const navSlide = () => {
     });
     }
     
-    navSlide();
+   navBurger();
 
 
 
