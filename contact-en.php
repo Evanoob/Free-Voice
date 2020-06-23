@@ -240,8 +240,8 @@ $mail->Subject    = 'Contact depuis votre site : '.$objet;
 $mail->MsgHTML($body);
 
 if(!$mail->Send()) {
-  header("Location: Message-non-envoye.html");
+  header("Location: Message-non-envoye-en.html");
 } else {
-  header("Location: Message-envoye.html");
+  header("Location: Message-envoye-en.html");
 }
 ?>
