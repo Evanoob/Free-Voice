@@ -13,39 +13,86 @@
     <script type="module" src="./js/burger.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/img/logo/logoitem-web.png">
 </head>
 <body>
-    
-    <nav>
+    <header class="header">
+        <figure class="logo"><a href="index.html"><img class="logo" src="assets/img/logo/Logoslogan-web.png" alt="logo"></a></figure>
+        <nav class="nav">
+            <ul class="nav-links">
+                <li class="nav-item"><a href="index.html">HOME</a></li>
+                <li class="nav-item"><a href="pro.html">COURSES FOR COMPANIES</a></li>
+                <li class="nav-item"><a href="public.html">COURSES FOR THE PUBLICourses for the public</a></li>
+                <li class="nav-item"><a href="contact.html">CONTACT US</a></li>
+            </ul>
+            <div class="burger">
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+
+    <main id="main-content">
+
+        <h1 class="title1">CONTACTEZ-NOUS</h1>
+
+        <figure class="figure"><img src="./assets/img/main/contact.jpg" alt="Image avec des pc portables"></figure>
+
+        <blockquote class="contact-blockquote">
+            <p> &laquo; Les meilleures choses qui arrivent dans le monde de l’entreprise ne sont pas le r&eacute;sultat du
+                travail d’un seul homme. C’est le travail de toute une &eacute;quipe. &raquo;</p>
+            <footer>Steve Jobs</footer>
+        </blockquote>
+
+        <form id="form" action="contact.php" method="post">
+            <input type="text" class="contact-color" name="nom" placeholder="Votre nom ou celui de l'entreprise (requis)" required
+                autocomplete minlenght="2">
+            <input type="email" iclass="contact-color" name="email" placeholder="Votre email (requis)" required autocomplete minlenght="2">
+            <input type="text" class="contact-color" name="siteWeb" placeholder="Votre site Web" autocomplete minlength="2">
+            <input type="text" class="contact-color" name="objet" placeholder="Objet : renseignements, Rendez-vous, Faire appel à nous (requis)" required autocomplete minlength="2">
+            <!-- <select name="besoin" id="objet">
+                <optgroup label="Formation Professionnelle">
+                    <option value="rdv">Faire appel &agrave; nos services</option>
+                    <option value="devis" selected>Demander des renseignements</option>
+                </optgroup>
+                <optgroup label="Formation Tout Public">
+                    <option value="rdv">Faire appel &agrave; nos services</option>
+                    <option value="devis" selected>Demander des renseignements</option>
+                </optgroup>
+            </select> -->
+            <textarea name="message" class="contact-color" placeholder="Entrez votre message ici, merci."></textarea>
+            <input type="submit" value="Envoyer">
+        </form>
+
+        <hr class="contact-hr">
+
+        <div class="partage">
+            <h3>PARTAGER :</h3>
+            <ul>
+                <li><a href="https://freevoiceonline.org/contactez-nous/?share=twitter&nb=1"><img class="rs"
+                            src="./assets/img/rs/twitter1.svg" alt="Partage sur twitter">
+                        <p>Twitter</p>
+                    </a></li>
+                <li><a href="https://freevoiceonline.org/contactez-nous/?share=facebook&nb=1"><img class="rs"
+                            src="./assets/img/rs/facebook1.svg" alt="Partage sur Facebook">
+                        <p>Facebook</p>
+                    </a></li>
+            </ul>
+        </div>
+
+    </main>
+
+    <footer>
         <ul>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
+            <li><a href="mentions.html">Mentions L&eacute;gales</a></li>
+            <li><a>Copyright &copy; 2020</a></li>
         </ul>
-    </nav>
-</header>
 
-
-<main>
-
-</main>
-
-
-<footer>
-    <div>
-        <ul>
-            <li></li>
-            <li></li>
-        </ul>
-    </div>
-
-    <div>
-        <figure><a href=""><img src="" alt=""></a></figure>
-        <figure><a href=""><img src="" alt=""></a></figure>
-        <figure><a href=""><img src="" alt=""></a></figure>
-    </div>
-</footer>
-
+        <div id="reseaux-sociaux">
+            <figure class="reseaux"><a href=""><img src="./assets/img/rs/facebook1.svg" alt="Facebook"></a></figure>
+            <figure class="reseaux"><a href=""><img src="./assets/img/rs/linkedin1.svg" alt="Linkedin"></a></figure>
+            <figure class="reseaux"><a href=""><img src="./assets/img/rs/twitter1.svg" alt="Twitter"></a></figure>
+        </div>
+    </footer>
 </body>
 </html>

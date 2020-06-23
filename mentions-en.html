@@ -13,16 +13,18 @@
     <script type="module" src="./js/burger.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/img/logo/logoitem-web.png">
 </head>
 <body>
-    <header>
-        <figure><a href="index.html"><img class="logo" src="assets/img/logo/Logoslogan-web.png" alt="logo"></a></figure>
-        <nav>
+
+    <header class="header">
+        <figure class="logo"><a href="index.html"><img class="logo" src="assets/img/logo/Logoslogan-web.png" alt="logo"></a></figure>
+        <nav class="nav">
             <ul class="nav-links">
-                <li><a href="index.html">ACCUEIL</a></li>
-                <li><a href="pro.html">NOS FORMATIONS EN ENTREPRISES</a></li>
-                <li><a href="public.html">NOS FORMATIONS EN PUBLIC</a></li>
-                <li><a href="contact.html">CONTACTEZ-NOUS</a></li>
+                <li class="nav-item"><a href="index.html">HOME</a></li>
+                <li class="nav-item"><a href="pro.html">COURSES FOR COMPANIES</a></li>
+                <li class="nav-item"><a href="public.html">COURSES FOR THE PUBLICourses for the public</a></li>
+                <li class="nav-item"><a href="contact.html">CONTACT US</a></li>
             </ul>
             <div class="burger">
                 <span></span>
@@ -30,26 +32,45 @@
         </nav>
     </header>
 
+    <main id="main-content">
+        <h1 class="title1">MENTIONS LEGALES</h1> 
 
-<main>
+        <figure class="figure mentions"><img src="./assets/img/logo/Logoslogan-web.png" alt="Logo slogan Free Voice">
+        </figure>
 
-</main>
+        <p class="para">Le site <span class="bold">www.freevoice.???</span> est la propri&eacute;t&eacute; de <span class="bold">Free
+                Voice</span> et de sa pr&eacute;sidente <span class="bold">Sophie Janinet</span>, dont le si&egrave;ge social est
+            situ&eacute; ???</p>
 
 
-<footer>
-    <div>
+        <p class="para">L’ensemble de ce site rel&egrave;ve de la l&eacute;gislation française et internationale sur le droit d’auteur
+            et la propri&eacute;t&eacute; intellectuelle. Tous les droits de reproduction sont r&eacute;serv&eacute;s, y compris pour les documents
+            t&eacute;l&eacute;chargeables et les repr&eacute;sentations iconographiques et photographiques. La reproduction de tout ou partie
+            de ce site sur quelque support que ce soit est formellement interdite sauf notre autorisation expresse.
+        </p>
+
+        <figure class="fleur"><img src="./assets/img/main/freevoicefleur.jpg" alt="Free Voice Fleur"></figure>
+
+
+        <p class="para">Nous remercions <span class="bold">???</span>, graphiste, pour son aide concernant le logo et la
+            charte graphique du site.</p>
+        <p class="para">Nous remercions <span class="bold">???</span>, photographe, de nous avoir transmis ses photos
+            pour que nous puissions nous en servir.</p>
+        <p class="para">Nous remercions <span class="bold">Anne Morren, Kenwele Mirza et Ga&euml;lle Sorriaux</span>, 
+            d&eacute;veloppeuses Web et mobile, sans qui le site n'aurait pas pu voir le jour.</p>
+    </main>
+
+    <footer>
         <ul>
-            <li></li>
-            <li></li>
+            <li><a href="mentions.html">Mentions L&eacute;gales</a></li>
+            <li><a>Copyright &copy; 2020</a></li>
         </ul>
-    </div>
 
-    <div>
-        <figure><a href=""><img src="" alt=""></a></figure>
-        <figure><a href=""><img src="" alt=""></a></figure>
-        <figure><a href=""><img src="" alt=""></a></figure>
-    </div>
-</footer>
-
+        <div id="reseaux-sociaux">
+            <figure class="reseaux"><a href=""><img src="./assets/img/rs/facebook1.svg" alt="Facebook"></a></figure>
+            <figure class="reseaux"><a href=""><img src="./assets/img/rs/linkedin1.svg" alt="Linkedin"></a></figure>
+            <figure class="reseaux"><a href=""><img src="./assets/img/rs/twitter1.svg" alt="Twitter"></a></figure>
+        </div>
+    </footer>
 </body>
 </html>
