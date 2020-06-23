@@ -107,7 +107,7 @@ div#companies {
 
     div#companies {
         flex-direction: row;
-        margin-top: 25px;
+        margin: 25px 0 50px 0;
     }
 
     div#companies figure:last-child {
