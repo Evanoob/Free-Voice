@@ -213,11 +213,11 @@ $objet=$_POST['objet'];
 $message=$_POST['message'];
 
 
-$corps = '<p>Nom : <strong>'.$nom.'</strong></p>';
+$corps = '<p>Name : <strong>'.$nom.'</strong></p>';
 $corps .= '<p>Email: <a href="mailto:'.$email.'">'.$email.'</a></p>';
 $corps .= '<p>Site: <a href="siteWeb :'.$site.'">'.$site.'</a></p>';
-$corps .= '<p><strong>Objet : </strong>'.$objet.'</p>';
-$corps .= '<p><strong>Message du client : </strong>'.$message.'</p>';
+$corps .= '<p><strong>Object : </strong>'.$objet.'</p>';
+$corps .= '<p><strong>Customer message : </strong>'.$message.'</p>';
 
 
 require('PHPMailer/class.phpmailer.php');
@@ -234,7 +234,7 @@ $destinataire ='sorriaux.gaelle@gmail.com';
 $mail->AddAddress($destinataire, '');
 //-----------------------------------------------------------------------------
 
-$mail->Subject    = 'Contact depuis votre site : '.$objet;
+$mail->Subject    = 'Contact from your site : '.$objet;
 //$mail->AltBody    = 'To view the message, please use an HTML compatible email viewer!'; // optional, comment out and test
 
 $mail->MsgHTML($body);
