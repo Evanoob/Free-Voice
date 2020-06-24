@@ -155,6 +155,13 @@ input:hover[type="submit"] {
 @media screen and (max-width: 1279px) {
 
     blockquote {
+        margin: 50px 150px;
+    }
+}
+
+@media screen and (max-width: 1074px) {
+
+    blockquote {
         margin: 50px 148px;
     }
 }
