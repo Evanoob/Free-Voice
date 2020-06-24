@@ -159,6 +159,13 @@ input:hover[type="submit"] {
     }
 }
 
+@media screen and (max-width: 1074px) {
+
+    blockquote {
+        margin: 50px 148px;
+    }
+}
+
 @media screen and (max-width: 1024px) {
 
     blockquote {
@@ -171,10 +178,6 @@ input:hover[type="submit"] {
         padding: 20px;
     }
 
-    /* .title1 {
-        font-size: 34px;
-    } */
-
     blockquote {
         border-left: 5px solid #cccccc;
         min-width: 320px;
@@ -183,12 +186,11 @@ input:hover[type="submit"] {
     blockquote p {
         margin-left: 20px;
         text-align: justify;
-        /* font-size: 16px; */
     }
 
-    /* .contact-figure img {
-        display: none;
-    } */
+    #form {
+        padding: 0;
+    }
 
     input,
     select,

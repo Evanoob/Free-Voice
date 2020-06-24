@@ -16,20 +16,26 @@
     <link rel="icon" href="assets/img/logo/logoitem-web.png">
 </head>
 <body>
-    <header class="header">
-        <figure class="logo"><a href="index.html"><img class="logo" src="assets/img/logo/Logoslogan-web.png" alt="logo"></a></figure>
-        <nav class="nav">
-            <ul class="nav-links">
-                <li class="nav-item"><a href="index.html">HOME</a></li>
-                <li class="nav-item"><a href="pro.html">COURSES FOR COMPANIES</a></li>
-                <li class="nav-item"><a href="public.html">COURSES FOR THE PUBLIC</a></li>
-                <li class="nav-item"><a href="contact.html">CONTACT US</a></li>
-            </ul>
-            <div class="burger">
-                <span></span>
-            </div>
-        </nav>
-    </header>
+   <!-- start header -->
+   <header class="header">
+    <figure class="logo"><a href="index.html"><img class="logo" src="assets/img/logo/Logoslogan-web.png"
+                alt="Logo Free Voice"></a></figure>
+
+    <nav role="navigation" class="nav-bar">
+        <ul class="nav-links">
+            <li class="nav-item"><a href="index-en.html">HOME</a></li>
+            <li class="nav-item"><a href="pro-en.html">TRAININGS FOR COMPANIES</a></li>
+            <li class="nav-item"><a href="public-en.html">TRAININGS FOR THE PUBLIC</a></li>
+            <li class="nav-item"><a href="contact-en.html">CONTACT US</a></li>
+        </ul>
+        <!-- start burger -->
+        <div class="burger">
+            <span></span>
+        </div>
+        <!-- end burger -->
+    </nav>
+</header>
+<!-- end header -->
 
 
     <main id="main-content">
@@ -49,16 +55,6 @@
             <input type="email" iclass="contact-color" name="email" placeholder="Your email (required)" required autocomplete minlenght="2">
             <input type="text" class="contact-color" name="siteWeb" placeholder="Your website" autocomplete minlength="2">
             <input type="text" class="contact-color" name="objet" placeholder="Subject of your message (required)" required autocomplete minlength="2">
-            <!-- <select name="besoin" id="objet">
-                <optgroup label="Formation Professionnelle">
-                    <option value="rdv">Faire appel &agrave; nos services</option>
-                    <option value="devis" selected>Demander des renseignements</option>
-                </optgroup>
-                <optgroup label="Formation Tout Public">
-                    <option value="rdv">Faire appel &agrave; nos services</option>
-                    <option value="devis" selected>Demander des renseignements</option>
-                </optgroup>
-            </select> -->
             <textarea name="message" class="contact-color" placeholder="Please enter your message here"></textarea>
             <input type="submit" value="Send">
         </form>
