@@ -37,9 +37,9 @@ p.para {
     text-align: justify;
 }
 
-.bold {
-    font-weight: 700;
-}
+.bold, .bold>a {font-weight: 700;
+    text-decoration: none;
+color: #5ec1b9} 
 
 figure.fleur {
     text-align: center;
