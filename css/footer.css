@@ -21,10 +21,12 @@ footer {
     margin-top: 30px;
     height: 50px;
     width: 100%;
-    padding: 0 100px;
+    /* padding: 0 100px; */
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    /* background-image: url(../assets/img/main/graphismefootergauche.svg);
+    background-repeat: no-repeat; */
 }
 
 footer.absolute {
@@ -47,6 +49,9 @@ figure.reseaux {
     float: right;
     margin-left: 10px;
 }
+
+footer #graphismefootergauche {max-height: 50px;
+padding: 0}
 
 @media screen and (max-width: 767px) {
     footer {
