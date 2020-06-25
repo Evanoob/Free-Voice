@@ -1,7 +1,22 @@
-* {
+/* *,  */
+html,
+body,
+header,
+figure,
+a,
+img,
+nav,
+ul,
+li,
+div,
+span {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -24,7 +39,8 @@ header {
 }
 
 /* drapeaux*/
-.fr , .en{
+.fr,
+.en {
     position: relative;
     float: right;
     margin-right: 15px;
