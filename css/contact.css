@@ -1,7 +1,29 @@
-* {
+/* *, */
+html,
+body,
+main,
+h1,
+figure,
+img,
+blockquote,
+p,
+footer,
+form,
+input,
+textarea,
+hr,
+div,
+h3,
+ul,
+li,
+a {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -69,11 +91,13 @@ input {
     color: #333333;
 }
 
-input::placeholder, textarea::placeholder {
+input::placeholder,
+textarea::placeholder {
     color: #333333;
 }
 
-input:hover, textarea:hover {
+input:hover,
+textarea:hover {
     border: 3px solid #5ec1b9;
 }
 
@@ -203,7 +227,7 @@ input:hover[type="submit"] {
         width: 150px;
         margin-left: 0
     }
-    
+
 
     .partage {
         margin: 20px 0 0 0;

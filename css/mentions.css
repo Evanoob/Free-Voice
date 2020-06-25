@@ -1,7 +1,20 @@
-* {
+*,
+html,
+body,
+main,
+h1,
+figure,
+img,
+p,
+span,
+a {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -37,9 +50,12 @@ p.para {
     text-align: justify;
 }
 
-.bold, .bold>a {font-weight: 700;
+.bold,
+.bold>a {
+    font-weight: 700;
     text-decoration: none;
-color: #5ec1b9} 
+    color: #5ec1b9
+}
 
 figure.fleur {
     text-align: center;
@@ -63,7 +79,8 @@ figure.fleur {
     #main-content {
         padding: 20px;
     }
-/* 
+
+    /* 
     .title1 {
         font-size: 34px;
     } */

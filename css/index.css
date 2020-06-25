@@ -1,7 +1,22 @@
-* {
+/* *, */
+html,
+body,
+main,
+article,
+figure,
+img,
+div,
+h1,
+p,
+span,
+h2 {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -85,6 +100,7 @@ div#companies {
         flex-wrap: wrap;
         justify-content: center;
     }
+
     article#approach img.big {
         max-width: 1000px;
         margin-top: 150px;
@@ -178,6 +194,7 @@ div#companies {
 
 /* S + XS */
 @media screen and (max-width: 768px) {
+
     /* TEXT AREAS */
     .titre {
         font-style: italic;

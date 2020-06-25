@@ -1,25 +1,26 @@
-*
-/* ,
+/* *
+, */
 html,
 body,
-header,
+main,
+h1,
 figure,
 img,
-nav,
-ul,
-li,
-a,
-div,
-span,
-h1,
 h2,
 p,
 h3,
-footer  */
-{
+hr,
+div,
+ul,
+li,
+a {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
     font-family: 'Open Sans', sans-serif;
 }
 
