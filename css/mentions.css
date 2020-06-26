@@ -62,6 +62,22 @@ figure.fleur {
     margin-bottom: 30px;
 }
 
+div#onu {
+    margin: 0 150px 30px;
+    min-width: 320px;
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+}
+
+div#onu>img#logonu {width: 150px;
+height : 100%}
+
+div#onu>p#ponu {font-size: 18px;
+    color: #333333;
+    text-align: justify;
+padding-left: 10px}
+
 @media screen and (max-width: 1279px) {
     p.para {
         margin: 0 0 30px;
