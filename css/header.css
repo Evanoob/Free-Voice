@@ -83,6 +83,7 @@ nav {
     display: none;
 }
 
+
 .nav-links>li>a {
     text-decoration: none;
     font-size: 16px;
@@ -111,7 +112,7 @@ nav {
     .nav-links {
         position: absolute;
         right: 0;
-        top: 30px;
+        top: 60px;
         height: 500px;
         background-color: white;
         display: flex;
@@ -123,9 +124,11 @@ nav {
     }
 
     .nav-links>li.nav-item
- {
-    display: block;
-}
+    {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
 
     .nav-active {
         transform: translateX(0%);
@@ -202,12 +205,10 @@ nav {
     .burger {
         margin-top: 15px;
     }
-    .nav-links>li.nav-item
-    {
-       display: flex;
-       justify-content: center;
-       align-items: center;
-   }
+
+    .nav-links {
+        top: 40px;
+    }
 
 }
 
