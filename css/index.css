@@ -76,6 +76,14 @@ div#companies {
     justify-content: space-between;
 }
 
+.blog{
+    color:#ed8b53;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-width: 300px;
+}
+
 
 /* XL + L */
 @media screen and (min-width: 1024px) {
@@ -266,5 +274,8 @@ div#companies {
     article#partners div#companies figure:first-child {
         margin: 50px 0
     }
+
+    .blog {text-align: center;
+    margin: 0 30px;}
 
 }
