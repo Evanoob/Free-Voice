@@ -72,6 +72,12 @@ p.para {
     min-width: 300px;
 }
 
+.blog>span>a {
+    font-weight: 700;
+    text-decoration: none;
+    color: #ed8b53;
+}
+
 .title3 {
     font-size: 20px;
     margin-bottom: 30px;

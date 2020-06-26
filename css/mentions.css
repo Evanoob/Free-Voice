@@ -58,6 +58,12 @@ p.para {
     min-width: 300px;
 }
 
+.blog>span>a {
+    font-weight: 700;
+    text-decoration: none;
+    color: #ed8b53;
+}
+
 .bold,
 .bold>a {
     font-weight: 700;
