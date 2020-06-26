@@ -46,7 +46,7 @@ p.para {
     font-size: 18px;
     color: #333333;
     margin: 0 150px 30px;
-    min-width: 320px;
+    min-width: 300px;
     text-align: justify;
 }
 
@@ -62,24 +62,35 @@ figure.fleur {
     margin-bottom: 30px;
 }
 
-div#onu {
+article#rse {
     margin: 0 150px 30px;
-    min-width: 320px;
+    min-width: 300px;
+    border: solid #5ec1b9 2px;
+    padding: 20px;
     display: flex;
-    flex-direction: row;
-    align-content: space-around;
+    flex-direction: column;
+   
+    flex-wrap: wrap;
 }
 
-div#onu>img#logonu {width: 150px;
-height : 100%}
+article#rse>img#logonu {
+    width: 250px;
+    height: 150px;
+    padding-right: 10px;
+    align-self: center;
+}
 
-div#onu>p#ponu {font-size: 18px;
+article#rse>p {
+    margin-bottom: 30px;
+    font-size: 18px;
     color: #333333;
     text-align: justify;
-padding-left: 10px}
+}
 
 @media screen and (max-width: 1279px) {
-    p.para {
+
+    p.para,
+    article#rse {
         margin: 0 0 30px;
     }
 }
@@ -101,8 +112,14 @@ padding-left: 10px}
         font-size: 34px;
     } */
 
-    p.para {
+    p.para,
+    article#rse {
         font-size: 16px;
         margin: 0 0 30px;
     }
+
+    article#rse>p {
+        font-size: 16px;
+    }
+
 }
