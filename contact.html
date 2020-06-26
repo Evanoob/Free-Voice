@@ -18,8 +18,12 @@
 </head>
 
 <body>
+    <!-- start header -->
     <header class="header">
-        <figure class="logo"><a href="index.html"><img class="logo" src="assets/img/logo/Logoslogan-web.png" alt="logo"></a></figure>
+        <!-- logo -->
+        <figure class="logo"><a href="index.html"><img class="logo" src="assets/img/logo/Logoslogan-web.png"
+                    alt="logo"></a></figure>
+        <!-- start nav -->
         <nav role="navigation" class="nav">
             <ul class="nav-links">
                 <li><a href="index.html">ACCUEIL</a></li>
@@ -27,9 +31,9 @@
                 <li><a href="public.html">NOS FORMATIONS EN PUBLIC</a></li>
                 <li><a href="contact.html">CONTACTEZ-NOUS</a></li>
                 <li class="nav-item"><a href="index.html"><img class="flags" src="./assets/img/main/france-50.png"
-                    alt="Traduction française"></a></li>
-        <li class="nav-item"><a href="index-en.html"><img class="flags" src="./assets/img/main/anglais-50.png"
-                    alt="Traduction in english"></a></li>
+                            alt="Traduction française"></a></li>
+                <li class="nav-item"><a href="index-en.html"><img class="flags" src="./assets/img/main/anglais-50.png"
+                            alt="Traduction in english"></a></li>
             </ul>
             <!-- start flag -->
             <div class="drapeaux">
@@ -38,53 +42,56 @@
                 <figure><a href="index-en.html"><img class="en" src="assets/img/main/anglais-50.png"
                             alt="Traduction in english"></a> </figure>
             </div>
-
+            <!-- start burger -->
             <div class="burger">
                 <span></span>
             </div>
         </nav>
     </header>
-
-
+    <!-- start main -->
     <main id="main-content">
-
         <h1 class="title1">CONTACTEZ-NOUS</h1>
-
-        <figure class="figure"><img src="./assets/img/main/photo2.png" alt="Image : formatrice qui écrit au tableau"></figure>
-
+        <figure class="figure"><img src="./assets/img/main/photo2.png" alt="Image : formatrice qui écrit au tableau">
+        </figure>
         <blockquote class="contact-blockquote">
-            <p> &laquo; Les meilleures choses qui arrivent dans le monde de l’entreprise ne sont pas le r&eacute;sultat du
+            <p> &laquo; Les meilleures choses qui arrivent dans le monde de l’entreprise ne sont pas le r&eacute;sultat
+                du
                 travail d’un seul homme. C’est le travail de toute une &eacute;quipe. &raquo;</p>
             <footer>Steve Jobs</footer>
         </blockquote>
-
+        <!-- start form -->
         <form id="form" action="contact.php" method="post">
-            <input type="text" class="contact-color" name="nom" placeholder="Votre nom ou celui de l'entreprise (requis)" required
+            <input type="text" class="contact-color" name="nom"
+                placeholder="Votre nom ou celui de l'entreprise (requis)" required autocomplete minlenght="2">
+            <input type="email" iclass="contact-color" name="email" placeholder="Votre email (requis)" required
                 autocomplete minlenght="2">
-            <input type="email" iclass="contact-color" name="email" placeholder="Votre email (requis)" required autocomplete minlenght="2">
-            <input type="text" class="contact-color" name="siteWeb" placeholder="Votre site Web" autocomplete minlength="2">
-            <input type="text" class="contact-color" name="objet" placeholder="Sujet de votre message (requis)" required autocomplete minlength="2">
+            <input type="text" class="contact-color" name="siteWeb" placeholder="Votre site Web" autocomplete
+                minlength="2">
+            <input type="text" class="contact-color" name="objet" placeholder="Sujet de votre message (requis)" required
+                autocomplete minlength="2">
             <textarea name="message" class="contact-color" placeholder="Entrez votre message ici, merci."></textarea>
             <input type="submit" value="Envoyer">
         </form>
-
-        <hr class="contact-hr">
-
-
-
+        <!-- end form -->
     </main>
-    <p class="blog">Pour découvrir l'univers Free Voice, suivez nous sur notre <span> <a href="https://freevoiceonline.org/">blog</a> </span></p>
+    <!-- end main -->
+    <p class="blog">Pour découvrir l'univers Free Voice, suivez nous sur notre <span> <a
+                href="https://freevoiceonline.org/">blog</a> </span></p>
+    <!-- start footer -->
     <footer>
         <ul>
             <li><a href="mentions.html">Mentions L&eacute;gales</a></li>
             <li><a>Copyright &copy; 2020</a></li>
         </ul>
-        
+
         <div id="reseaux-sociaux">
-            <figure class="reseaux"><a href="https://www.facebook.com/FreeVoiceOnline"><img src="./assets/img/rs/facebook1.svg" alt="Facebook"></a></figure>
-            <figure class="reseaux"><a href="https://www.instagram.com/freevoiceo/?hl=fr"><img class="insta" src="./assets/img/rs/instagram.svg" alt="Instagram"></a></figure>
+            <figure class="reseaux"><a href="https://www.facebook.com/FreeVoiceOnline"><img
+                        src="./assets/img/rs/facebook1.svg" alt="Facebook"></a></figure>
+            <figure class="reseaux"><a href="https://www.instagram.com/freevoiceo/?hl=fr"><img class="insta"
+                        src="./assets/img/rs/instagram.svg" alt="Instagram"></a></figure>
         </div>
     </footer>
+    <!-- end footer -->
 </body>
 
 </html>
