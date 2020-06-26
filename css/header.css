@@ -76,7 +76,11 @@ nav {
     background: #ed8b53;
     border-radius: 15px;
     margin-top: 20px;
+}
 
+.nav-links>li.nav-item
+ {
+    display: none;
 }
 
 .nav-links>li>a {
