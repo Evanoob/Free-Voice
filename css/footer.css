@@ -29,15 +29,12 @@ body {
 
 footer {
     bottom: 0;
-    margin-top: 30px;
-    height: 50px;
+    padding: 30px;
+    height: 100px;
     width: 100%;
-    /* padding: 0 100px; */
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    /* background-image: url(../assets/img/main/graphismefootergauche.svg);
-    background-repeat: no-repeat; */
 }
 
 footer.absolute {
@@ -71,7 +68,8 @@ padding: 0}
 
 @media screen and (max-width: 767px) {
     footer {
+
         margin-bottom: 10px;
-        padding: 10px 10px
+        padding: 30px 15px
     }
 }
