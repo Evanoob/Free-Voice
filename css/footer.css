@@ -62,6 +62,13 @@ figure.reseaux {
     margin-left: 10px;
 }
 
+.blog{
+    color:#ed8b53;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 .insta{
     width: 30px;
     height: 30px;
