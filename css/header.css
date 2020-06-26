@@ -111,6 +111,7 @@ nav {
     .nav-links {
         position: absolute;
         right: 0;
+        top: 30px;
         height: 500px;
         background-color: white;
         display: flex;
@@ -120,6 +121,11 @@ nav {
         transform: translateX(150%);
         transition: transform .5s ease-in-out;
     }
+
+    .nav-links>li.nav-item
+ {
+    display: block;
+}
 
     .nav-active {
         transform: translateX(0%);
@@ -196,6 +202,13 @@ nav {
     .burger {
         margin-top: 15px;
     }
+    .nav-links>li.nav-item
+    {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
+
 }
 
 
