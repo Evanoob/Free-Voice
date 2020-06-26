@@ -37,8 +37,10 @@ h2 {
 .titre {
     font-style: italic;
     font-size: 36px;
-    color: #ccc;
+    color: #cccccc;
     font-family: 'Lora', serif !important;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 p {
@@ -76,8 +78,8 @@ div#companies {
     justify-content: space-between;
 }
 
-.blog{
-    color:#ed8b53;
+.blog {
+    color: #ed8b53;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -132,7 +134,6 @@ div#companies {
 
     div#companies {
         flex-direction: row;
-        margin-top: 25px;
     }
 
     div#companies figure:last-child {
@@ -275,7 +276,9 @@ div#companies {
         margin: 50px 0
     }
 
-    .blog {text-align: center;
-    margin: 0 30px;}
+    .blog {
+        text-align: center;
+        margin: 0 30px;
+    }
 
 }
