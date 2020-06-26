@@ -78,10 +78,12 @@ nav {
     margin-top: 20px;
 }
 
-.nav-links>li.nav-item
+nav>.nav-links>li.nav-item
  {
     display: none;
 }
+
+
 
 .nav-links>li>a {
     text-decoration: none;
