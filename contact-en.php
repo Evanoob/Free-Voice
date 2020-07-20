@@ -230,7 +230,7 @@ $mail->SetFrom($email, $site.' '.$nom);
 
 //-----------------------------------------------------------------------------
 // $destinataire ='contact@conctact.fr';
-$destinataire ='sorriaux.gaelle@gmail.com';
+$destinataire ='info@freevoice-consulting.com';
 $mail->AddAddress($destinataire, '');
 //-----------------------------------------------------------------------------
 
